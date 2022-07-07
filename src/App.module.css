@@ -1,0 +1,43 @@
+/* Poner imagen de fondo del todo */
+.app {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* Colocar el fondo borroso */
+.bkg {
+  width: 230vh;
+  height: 100vh;
+  backdrop-filter: blur(16px);
+  background-color: #00000025;
+}
+
+.container {
+  width: 80vw;
+  height: 85vh;
+  margin: 9vh 9vw;
+  top: 0;
+  /* Lo que desborda es eliminado */
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55vh 15vh;
+  border-radius: 1.5rem;
+}
+
+.citiesContainer {
+  display: flex;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.458);
+  backdrop-filter: blur(18px);
+  justify-content: space-between;
+}
+
+.app,
+.container {
+  background-image: url(./assets/bkg.jpg);
+  background-size: cover;
+  position: absolute;
+}
