@@ -25,6 +25,7 @@ export default function SearchBar({ onSearch }) {
       </NavLink>
       <input
         onChange={(e) => handleChange(e)}
+        onKeyDown={(e) => (e.key == "Enter" ? seacrhCity(e) : null)}
         type="text"
         placeholder="Ciudad..."
         value={input}
